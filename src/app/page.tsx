@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { TabsContent } from "../components/ui/tabs";
 import { Pie, Doughnut, Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
