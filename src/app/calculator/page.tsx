@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 
 // Constants for the equation
 const FLOPs_PER_TOKEN = 364_000_000_000; // 364B
@@ -16,8 +15,8 @@ function estimateTokens(text: string) {
 const AnimatedNumber = ({ value, decimals = 0 }: { value: number; decimals?: number }) => {
   const [display, setDisplay] = React.useState(value);
   React.useEffect(() => {
-    let start = display;
-    let end = value;
+    const start = display;
+    const end = value;
     let frame: number;
     let startTime: number;
     function animate(ts: number) {
